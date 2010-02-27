@@ -1,0 +1,5 @@
+This is a very basic command line JMX Client Written in Jython.
+It takes two arguments, host and port for making a remote JMX connection and pulling memory statistics from a JVM.
+I plan on extending the client to be robust, and perhaps build a Web interface on the engine for trending.
+
+Any questions should be directed to matthew@thebitsource.com.
