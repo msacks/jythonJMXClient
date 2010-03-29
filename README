@@ -4,6 +4,10 @@ I plan on extending the client to be robust, and perhaps build a Web interface o
 
 Any questions should be directed to matthew@matthewsacks.com.
 
+System Requirements:
+Requires Jython. Tested on 2.5.1.
+
+Enhancements:
 TODO: Remove optparse and replace cmd with cmd2 for option parsing
 TODO: Bundle in a jar
 TODO: Add useful help information
