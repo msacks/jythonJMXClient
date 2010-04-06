@@ -18,6 +18,7 @@ from cmd import Cmd
 
 class jmxCmd(Cmd):
 	prompt = 'jmx> '
+	intro = "Simple Command-line JMX Client"
 
 	def do_connect(self, line):
                 """connect -h|--hostip <hostname or ip_addr> -p|--portnum <port>
@@ -79,11 +80,12 @@ class jmxCmd(Cmd):
 		result = remote.getAttribute(obn, options.attr);
 
 		print result		
-
+	
 	def do_quit(self, arg):
         	print("bye.")
        		return True    
-	
+
+			
 	default_to_shell = True
 
 if __name__ == '__main__':
