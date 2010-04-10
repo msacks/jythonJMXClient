@@ -2,7 +2,7 @@
 # Jython Script for gathering metrics via JMX via command line interface
 # matthew@thebitsource.com
 # Licensed under the Apache License (AL2)
-# v 0.2.1
+# v 0.2.3
 # NOTE: Commands may also be passed as a script, just store commands as a text file and feed it to the parser
 
 #Java Dependencies
