@@ -17,7 +17,11 @@ from urlparse import urljoin
 from cmd import Cmd
 
 class jmxCmd(Cmd):
-	prompt = 'jmx> '
+	if len(sys.argv) > 1:
+		prompt = ''
+	else:
+		prompt = 'jmx> '
+
 	intro = "Simple Command-line JMX Client"
 
 	def do_connect(self, line):
@@ -89,4 +93,12 @@ class jmxCmd(Cmd):
 	default_to_shell = True
 
 if __name__ == '__main__':
-	jmxCmd().cmdloop()		
+	if len(sys.argv) > 1:
+		try:
+			input = open(sys.argv[1], 'rt')
+			sys.stdin = input
+			jmxCmd(input).cmdloop()
+		finally:
+			input.close()	
+	else:
+		jmxCmd().cmdloop()
